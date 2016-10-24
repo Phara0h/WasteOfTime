@@ -47,8 +47,10 @@ default is between 1-3 seconds.
 
 ***Optional Query***:
 
-> **min**(*Number*): The min amount of seconds to waste.
-> **max**(*Number*): The max amount of seconds to waste.
+>**min**(*Number*): The min amount of seconds to waste.
+
+
+>**max**(*Number*): The max amount of seconds to waste.
 
 ----
 
