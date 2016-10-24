@@ -1,6 +1,8 @@
+#!/usr/bin/env node
+
 var express = require('express');
 var http = require('http');
-var config = require('./config.js');
+var config = require('../config.js');
 
 var app = express();
 var server = http.createServer(app);
