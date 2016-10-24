@@ -8,7 +8,7 @@ Setup
 ----------
 change port and host in the config.js defaults are localhost:27998
 ```sh
-npm install
+npm install WasteOfTime
 node server.js
 ```
 ----
