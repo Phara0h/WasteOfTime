@@ -1,8 +1,8 @@
 Waste Of Time
 ===============
 
-Waste Of Time is a service to test stuff with when you need a service that does nothing but responds back after X time has passed.
-----
+A service to test stuff with when you need a service that does nothing but responds back after X time has passed.
+
 
 Setup
 ----------
