@@ -1,9 +1,13 @@
 {
   "name": "WasteOfTime",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "dependencies": {
     "express": "^4.14.0",
     "nstats": "^1.0.1"
+  },
+  "main" : "./bin/wot",
+  "scripts": {
+    "start": "node ./bin/wot"
   },
   "description": "A service that is used for making REST calls to and have the response take N number of seconds long.",
   "author": "Jt Whissel",
