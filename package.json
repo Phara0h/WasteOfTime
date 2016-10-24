@@ -1,0 +1,21 @@
+{
+  "name": "WasteOfTime",
+  "version": "1.0.0",
+  "devDependencies": {
+    "express": "^4.14.0",
+    "nstats": "^1.0.1",
+  },
+  "description": "A service that is used for making REST calls to and have the response take N number of seconds long.",
+  "author": "Jt Whissel",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "jtwhissel@gmail.com",
+      "name": "Phara0h"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phara0h/wasteoftime.git"
+  }
+}
