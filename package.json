@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "express": "^4.14.0",
-    "nstats": "^1.0.1",
+    "nstats": "^1.0.1"
   },
   "description": "A service that is used for making REST calls to and have the response take N number of seconds long.",
   "author": "Jt Whissel",
