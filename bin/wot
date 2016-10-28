@@ -6,6 +6,7 @@ var config = require('../config.js');
 
 var app = express();
 var server = http.createServer(app);
+server.timeout = 0;
 
 var stats = require('nstats')();
 stats.interval = 0;
@@ -16,7 +17,14 @@ app.get('/wot/api/time/random?', function(req, res, next)
 {
   var min = req.query.min || 1;
   var max = req.query.max || 5;
-  wastetime((Math.random() * max + min), ()=>{
+  wastetime((Math.random() * max) + min, ()=>{
+      res.status(200).send();
+  });
+});
+
+app.get('/wot/api/time/milliseconds/:milliseconds', function(req, res, next)
+{
+  wastetime(req.params.milliseconds/1000, ()=>{
       res.status(200).send();
   });
 });
@@ -90,7 +98,12 @@ app.get('/wot/api/server/stats', (req, res) =>
 
 server.listen(config.port, config.host);
 
-console.log('Waste Of Time');
+console.log('__      __          _           ___    __   _____  _             ');
+console.log('\\ \\    / /__ _  ___| |_  ___   / _ \\  / _| |_   _|(_) _ __   ___ ');
+console.log(' \\ \\/\\/ // _` |(_-<|  _|/ -_) | (_) ||  _|   | |  | || \'  \\ / -_)');
+console.log('  \\_/\\_/ \\__,_|/__/ \\__|\\___|  \\___/ |_|     |_|  |_||_|_|_|\\___|');
+console.log('                                                                 ');
+
 console.log('Version: 1.0');
 console.log('Running on ' + config.host + ':' + config.port);
 
