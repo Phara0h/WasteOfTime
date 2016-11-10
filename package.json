@@ -1,6 +1,6 @@
 {
   "name": "WasteOfTime",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "dependencies": {
     "express": "^4.14.0",
     "nstats": "^1.0.1"

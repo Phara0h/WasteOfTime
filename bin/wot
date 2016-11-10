@@ -13,11 +13,12 @@ stats.interval = 0;
 app.use(stats.express);
 
 
-app.get('/wot/api/time/random?', function(req, res, next)
+app.get('/wot/api/time/random', function(req, res, next)
 {
+
   var min = req.query.min || 1;
   var max = req.query.max || 5;
-  wastetime((Math.random() * max) + min, ()=>{
+  wastetime((Math.random() * (Number(max) - Number(min)) + Number(min)), ()=>{
       res.status(200).send();
   });
 });
