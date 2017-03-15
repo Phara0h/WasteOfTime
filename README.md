@@ -17,7 +17,7 @@ wot
 
 REST API
 ----------
-####**GET /wot/api/time/seconds/:seconds**
+#### **GET /wot/api/time/seconds/:seconds**
 Responds back with status 200 after N number of seconds.
 
 ***Params***:
@@ -26,7 +26,7 @@ Responds back with status 200 after N number of seconds.
 
 
 ----
-####**GET /wot/api/time/minutes/:minutes**
+#### **GET /wot/api/time/minutes/:minutes**
 Responds back with status 200 after N number of minutes.
 
 ***Params***:
@@ -35,7 +35,7 @@ Responds back with status 200 after N number of minutes.
 
 ----
 
-####**GET /wot/api/time/hours/:hours**
+#### **GET /wot/api/time/hours/:hours**
 Responds back with status 200 after N number of hours.
 
 ***Params***:
@@ -44,7 +44,7 @@ Responds back with status 200 after N number of hours.
 
 ----
 
-####**GET /wot/api/time/random/**
+#### **GET /wot/api/time/random/**
 Responds back with status 200 after random amount of seconds have passed.
 default is between 1-3 seconds.
 
